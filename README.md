@@ -38,11 +38,11 @@ The goal is to make sports performance data easier to explore and compare across
 
 **Dashboard 1 — Global Olympic Sports Performance Analysis**
 
-[View Dashboard 1](https://public.tableau.com/views/Olympic_Sport_Performance_Extract2/Dashboard1)
+[View Dashboard 1]https://public.tableau.com/views/Olympic_Sports_Performance_dashboard1/GlobalOlympicPerformance_?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 **Dashboard 2 — Olympic Sports Performance**
 
-[View Dashboard 2](https://public.tableau.com/views/Olympic_Sport_Performance_Extract3/Dashboard2)
+[View Dashboard 2]https://public.tableau.com/views/Olympic_Sports_Performance_dashboard2/OlympicParticipationandPerformance?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ## 📁 Project Structure
 
@@ -57,33 +57,6 @@ olympic-performance-dashboard/
     └── style.css
 ```
 
-## 🚀 Run Locally
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/aeraa1725-bot/olympic-performance-dashboard.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd olympic-performance-dashboard
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-
-4. Start the Flask application:
-
-   ```bash
-   python app.py
-   ```
-
-5. Open http://127.0.0.1:5000 in your browser.
 
 ## 🌐 Live Demo
 
