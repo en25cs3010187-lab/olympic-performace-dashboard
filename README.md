@@ -58,9 +58,6 @@ olympic-performance-dashboard/
 ```
 
 
-## 🌐 Live Demo
-
-   **Live Website:** https://olympic-performance-dashboard.onrender.com
 
 ## 👩‍💻 Author
 
