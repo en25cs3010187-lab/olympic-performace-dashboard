@@ -1,0 +1,90 @@
+IDEATION PHASE
+BRAINSTORM & IDEA PRIORITIZATION TEMPLATE
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 4 Marks
+
+Student         : Anushka Sawner (Medicaps University) - Individual Capstone Project
+Mentor          : No mentor assigned
+
+------------------------------------------------------------------------
+Brainstorm & Idea Prioritization Template:
+------------------------------------------------------------------------
+Brainstorming provides a free and open environment that encourages everyone
+within a team to participate in the creative thinking process that leads to
+problem solving. Use this template in your own brainstorming sessions so your
+team can unleash their imagination and start shaping concepts even if you're
+not sitting in the same room.
+
+Note on this document: This is an individual project, so the only "team
+member" is Anushka Mali. No brainstorming board, sticky notes, or session
+records were provided. The ideas below are therefore the ideas that match the
+features documented in the project README on GitHub and the Tableau workbook
+sheets reported for this project.
+[STUDENT TO CONFIRM: add any other ideas you considered and rejected during
+your own brainstorming, if they exist]
+
+------------------------------------------------------------------------
+Step 1: Brainstorm and Idea Listing
+------------------------------------------------------------------------
+Each team member lists out as many ideas as possible without judging them at
+this stage.
+
+S.No | Team Member  | Idea / Suggestion                                                    | Category                | Group No.
+-----|--------------|----------------------------------------------------------------------|-------------------------|----------
+1    | Anushka Sawner | Rank the Top 10 countries by total medal achievements                | Medal performance       | 1
+2    | Anushka Sawner | Show the gold / silver / bronze breakdown for each country           | Medal performance       | 1
+3    | Anushka Sawner | Compare medal efficiency across countries                            | Medal performance       | 1
+4    | Anushka Sawner | Plot medal performance over time across Olympic editions             | Trend analysis          | 2
+5    | Anushka Sawner | Compare Summer vs. Winter Olympics medal totals                      | Comparative analysis    | 3
+6    | Anushka Sawner | Compare medal performance by region                                  | Comparative analysis    | 3
+7    | Anushka Sawner | Show athlete participation by sport                                  | Athlete participation   | 4
+8    | Anushka Sawner | Show athlete gender distribution                                     | Athlete participation   | 4
+9    | Anushka Sawner | Embed the Tableau dashboards in a Flask website (home page)          | Delivery / presentation | 5
+10   | Anushka Sawner | Add a /story page that walks through four narrative points           | Storytelling / delivery | 5
+
+Group names:
+  Group 1 - Country medal performance
+  Group 2 - Medal trends over time
+  Group 3 - Comparisons (Summer vs. Winter, regions)
+  Group 4 - Athlete participation and demographics
+  Group 5 - Website delivery and data storytelling
+
+------------------------------------------------------------------------
+Step 2: Idea Prioritization
+------------------------------------------------------------------------
+Rate each grouped idea on feasibility and importance, then select the final
+idea(s) to move forward with.
+
+Group | Final Idea                                                          | Feasibility | Importance | Priority | Selected
+No.   |                                                                     | (H/M/L)     | (H/M/L)    |          | (Yes/No)
+------|---------------------------------------------------------------------|-------------|------------|----------|---------
+1     | Country medal performance: Top 10 countries, medal breakdown,       | High        | High       | High     | Yes
+      | and medal efficiency views in Tableau                               |             |            |          |
+2     | Medal Performance Over Time view in Tableau                         | High        | High       | High     | Yes
+3     | Summer vs. Winter and Regional Medal Performance comparison views   | High        | High       | High     | Yes
+4     | Athlete participation by sport and athlete gender distribution      | Medium      | Medium     | Medium   | Yes
+5     | Flask website with a home page (embedded dashboards) and a /story   | High        | High       | High     | Yes
+      | page that presents the four narrative points                        |             |            |          |
+
+Reasons for the ratings (based on project facts, not on test results):
+- Group 1: Medal totals and rankings are standard aggregations in Tableau, so
+  feasibility is High. The exact definition of "medal efficiency" is
+  Not verified [STUDENT TO CONFIRM: formula used].
+- Group 2: A medal-trend line over Olympic editions is a common Tableau view
+  and supports one of the four story points.
+- Group 3: These two comparisons are story points 3 and 4 of the /story page,
+  so their importance is High.
+- Group 4: Athlete counts need care (possible duplicate records, datasets with
+  different levels of detail), so feasibility is rated Medium. Whether these
+  two sheets appear on the published dashboards is Not verified.
+- Group 5: Flask and Tableau Public are free and well documented. The GitHub
+  repository shows "/" and "/story" routes in app.py and a README that lists
+  the features. Live-site behaviour was not independently checked.
+
+Ratings are the student's judgement. [STUDENT TO CONFIRM: ratings]
+
+Final decision: All five groups were selected to form the final project:
+Tableau dashboards plus a Flask website that embeds them and tells a story.

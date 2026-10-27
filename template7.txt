@@ -1,0 +1,60 @@
+CUSTOMER JOURNEY MAP
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 2 Marks
+
+------------------------------------------------------------------------
+Customer Journey Map
+------------------------------------------------------------------------
+Map out the customer's experience stage-by-stage, capturing their actions,
+touchpoints, thoughts, and feelings, along with process ownership and
+improvement opportunities at each stage.
+
+Note on evidence: This journey is an ASSUMED journey for the persona "Aarav"
+(see the Empathy Map). It is not based on interviews, surveys, or usage
+analytics, which were not provided or verified. Touchpoints are taken from
+the real project structure (home page, /story page, Tableau Public dashboards).
+
+PHASE OF JOURNEY
+
+                   Stage 1                  Stage 2                       Stage 3
+                   Arrive and get           Explore the dashboards        Follow the story and
+                   oriented                                               take away insights
+-----------------  -----------------------  ----------------------------  ---------------------------
+ACTIONS            - Opens the website      - Looks at the embedded       - Opens the /story page
+What does the        link                     Tableau dashboards          - Reads the four narrative
+customer do?       - Reads the page title   - Hovers over charts to read     points in order
+                     and layout               values                    - Notes which countries,
+                   - Decides where to       - Compares countries,           periods, and regions stand
+                     start                    Summer/Winter, and regions    out
+
+TOUCHPOINT         - Flask home page "/"    - Tableau Public dashboards   - Flask "/story" page
+What part of the   - Link shared by         (Dashboard 1 and 2)           - Narrative points:
+service do they      student or in report                                  Top 10 Countries; Medal
+interact with?                                                              Performance Over Time;
+                                                                            Summer vs. Winter;
+                                                                            Regional Medal Performance
+
+CUSTOMER THOUGHT   - "Is this page about   - "Which country leads?"       - "Now the pieces fit
+What is the          what I need?"          - "Can I trust these            together."
+customer thinking? - "Will this load         numbers?"                    - "What else could I
+                     quickly?"                                              check?"
+
+CUSTOMER FEELING   Curious, slightly       Interested, occasionally      Satisfied if the story is
+What is the        unsure                  overwhelmed by many visuals   clear; still unsure about
+customer feeling?                                                          data source if not stated
+
+PROCESS OWNERSHIP  Anushka Sawner (website   Anushka Sawner (Tableau         Anushka Sawner (story page
+Who is in the      design and content);    dashboards); Tableau Public   content); Render hosts
+lead on this?      Render hosts the site   hosts the views               the page
+
+OPPORTUNITIES      - Add a short intro     - Add short notes under       - Add a clear statement of
+How can we           and navigation link     each chart saying what to     the dataset source and
+improve this         to the story            look for                      limits once the source is
+stage?             - Check page load on    - Confirm and document          verified
+                     phone and laptop        filters and tooltips        - Add a summary or
+                     [Not yet tested]        [Not verified]                conclusion section
+                                           - Check loading time          - Collect real user feedback
+                                             [Not measured]                [Not done]

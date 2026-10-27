@@ -1,0 +1,86 @@
+PROJECT DESIGN PHASE-II
+TECHNOLOGY STACK (ARCHITECTURE & STACK)
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 2 Marks
+
+------------------------------------------------------------------------
+Define Your Technology Stack:
+------------------------------------------------------------------------
+Identify the technologies, platforms, databases, BI tools, and integrations
+that you will use to build your Business Intelligence solution. A well-chosen
+technology stack helps ensure that the solution is scalable, maintainable,
+secure, and suitable for data analysis and reporting requirements.
+
+Evidence used: GitHub README (lists Python, Flask, Tableau Public, HTML, CSS,
+Git and GitHub), app.py (Flask routes "/" and "/story"), requirements.txt
+(contains Flask and gunicorn), and the project links. Snowflake was not used.
+
+1. Programming / Query Language
+   Description  : Language used to query, filter, transform, aggregate, and
+                  analyze data.
+   Technology   : Python (Flask app), HTML and CSS (pages and styling).
+                  No SQL is used. JavaScript use: Not verified.
+   Justification: Python and Flask run the website. HTML/CSS build the pages.
+                  Data aggregation is done inside Tableau, not in Python or SQL.
+
+2. Database / Data Warehouse
+   Description  : Used to store and manage structured business data for
+                  analysis and reporting.
+   Technology   : Not applicable - no database or data warehouse is used. The
+                  datasets are files shared through a Google Drive folder and
+                  loaded into Tableau. File format: [STUDENT TO CONFIRM: CSV /
+                  Excel / other]. Snowflake and MySQL: Not applicable.
+   Justification: The project is small and read-only, so files plus a Tableau
+                  data connection are enough.
+
+3. Data Ingestion
+   Description  : Used to load data from source files or external systems into
+                  the analytical environment.
+   Technology   : Tableau data connection to the dataset files.
+                  Not applicable - this project uses Tableau and Flask, not
+                  Snowflake (no Snowflake stages or COPY INTO).
+   Justification: Tableau connects directly to files, so no separate ingestion
+                  tool is needed. Dashboard view names contain "Extract",
+                  suggesting extracts were published; extract settings are
+                  Not verified.
+
+4. Data Transformation and Business Logic
+   Description  : Tools/logic used to clean, join, filter, and aggregate data
+                  and to calculate KPIs, metrics, and business rules.
+   Technology   : Tableau (desktop authoring tool - [STUDENT TO CONFIRM:
+                  Tableau Public / Tableau Desktop edition]). Tableau Prep:
+                  Not verified. Snowflake SQL: Not applicable.
+   Justification: Aggregations such as medal totals and medal efficiency are
+                  built in Tableau sheets. The exact calculated fields, joins,
+                  and cleaning steps are Not verified.
+
+5. Data Visualization / Analytics
+   Description  : Used to create interactive dashboards, charts, reports, KPIs,
+                  and visual analysis.
+   Technology   : Tableau Public - 8 sheets, 2 dashboards, 1 story (as reported
+                  by the student).
+   Justification: Tableau Public lets dashboards be published openly and
+                  embedded in a website without a paid server. Public data
+                  only should be used because published views are public.
+
+6. Front-End / User Interface
+   Description  : Interface through which users interact with dashboards,
+                  filters, parameters, and visual insights.
+   Technology   : Flask web app with HTML templates and CSS (home page "/" and
+                  story page "/story"), with Tableau Public dashboards embedded.
+   Justification: Flask is lightweight and gives a custom story page around the
+                  dashboards. Streamlit was not used.
+
+Additional components used by the project (not in the template's six rows):
+
+7. Hosting / Deployment
+   Technology   : Render (live site: https://olympic-performance-dashboard.onrender.com).
+                  gunicorn is listed in requirements.txt. Start command and
+                  hosting plan: Not verified.
+
+8. Version Control
+   Technology   : Git and GitHub
+                  (https://github.com/en25cs3010187-lab/olympic-performance-dashboard).

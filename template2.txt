@@ -1,0 +1,69 @@
+IDEATION PHASE
+EMPATHIZE & DISCOVER
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 4 Marks
+
+------------------------------------------------------------------------
+Empathy Map Canvas:
+------------------------------------------------------------------------
+An empathy map is a simple, easy-to-digest visual that captures knowledge
+about a user's behaviours and attitudes. It is a useful tool to help teams
+better understand their users. Creating an effective solution requires
+understanding the true problem and the person who is experiencing it. The
+exercise of creating the map helps participants consider things from the
+user's perspective along with his or her goals and challenges.
+
+Empathy Map
+Create an empathy map to understand your customer/user from four perspectives
+- what they Say, Think, Do, and Feel - in relation to the problem your project
+addresses. This helps the team build a customer-centric solution.
+
+Important note on evidence: No interviews, surveys, or user testing were
+provided or verified for this project. The persona below is an ASSUMED
+(proxy) persona created from the project's purpose. It is not based on
+research with real users.
+[STUDENT TO CONFIRM: if you spoke to classmates, faculty, or sports fans,
+add what they actually said]
+
+------------------------------------------------------------------------
+PERSONA NAME : Aarav (assumed persona)
+ROLE / USER TYPE : Student and sports enthusiast who wants to understand
+                   how countries perform at the Olympic Games
+------------------------------------------------------------------------
+
+                         SAYS                                   THINKS
+        ---------------------------------------  -----------------------------------------
+        - "Which countries win the most          - "Is this data trustworthy and
+          medals?"                                 complete?"
+        - "Has a country improved over the       - "I do not have time to build charts
+          years?"                                  myself."
+        - "Are Summer and Winter Games           - "A visual summary would help me see
+          different?"                              patterns faster than a table."
+        - "Can I see this by region, not         - "I need a clear order to follow so I
+          only by country?"                        do not get lost."
+
+                              [ ARAV (assumed) ]
+
+                         DOES                                   FEELS
+        ---------------------------------------  -----------------------------------------
+        - Searches the web for medal tables      - Curious about which nations lead and
+          and statistics                           how they changed over time
+        - Compares a few countries by hand       - Overwhelmed when data is spread over
+          in spreadsheets or notes                 many rows, editions, and sports
+        - Looks for charts he can click,         - Unsure whether numbers from different
+          hover over, and filter                   sources agree
+        - Opens a website on a laptop or         - Satisfied when a chart answers his
+          phone and scans quickly                  question in a few seconds
+
+How this empathy map links to the solution (design intent, not tested):
+- "Which countries win the most medals?" -> Top 10 Countries by Medals and
+  Medal Breakdown by Country sheets.
+- "Has a country improved?" -> Medal Performance Over Time sheet.
+- "Summer vs. Winter?" -> Summer vs. Winter Medal Totals sheet.
+- "By region?" -> Medal Performance by Region sheet.
+- "I need an order to follow" -> the /story page with four narrative points.
+- "Scans quickly on a phone" -> the README lists a responsive Flask layout;
+  testing on real phones is Not verified.

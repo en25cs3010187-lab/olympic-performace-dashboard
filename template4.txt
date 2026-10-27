@@ -1,0 +1,123 @@
+PROJECT DESIGN PHASE-II
+SOLUTION REQUIREMENTS (FUNCTIONAL & NON-FUNCTIONAL)
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 4 Marks
+
+How to read the status tags used below:
+  [Implemented - reported]  = described in the GitHub README / app.py or in the
+                              Tableau workbook sheet list supplied by the student.
+                              Not independently tested.
+  [Planned]                 = a requirement of the solution with no evidence yet
+                              of completion.
+  Not verified              = no evidence was available.
+  Not measured              = no measurement was taken.
+
+------------------------------------------------------------------------
+Functional Requirements:
+------------------------------------------------------------------------
+Following are the functional requirements of the proposed solution.
+
+FR 1 | Data Access & Integration | Priority: High
+  - Load the Olympic sports datasets (shared in the project's Google Drive
+    dataset folder) into Tableau so they can be used for analysis.
+    [Implemented - reported: Tableau sheets exist]
+  - Source, provenance, file format, and size of the datasets are Not verified.
+    The data must NOT be described as official Olympic data until its origin
+    is confirmed. [STUDENT TO CONFIRM: dataset source, file names, formats,
+    row counts]
+  - If more than one dataset is combined (for example medals and athletes),
+    the method of combining and the different levels of detail are
+    Not verified. [STUDENT TO CONFIRM]
+
+FR 2 | Data Processing | Priority: High
+  - Prepare the data so country, region, sport, Olympic edition, and medal
+    fields are consistent before analysis.
+  - Check for duplicate records and inconsistent country names so that medal
+    totals and athlete counts are not overstated.
+  - Status: The specific cleaning steps, joins, and filters used are
+    Not verified. [STUDENT TO CONFIRM: what was cleaned, how duplicates were
+    handled, any calculated fields]
+
+FR 3 | Business Analysis | Priority: High
+  Analyses required to answer the project's questions (sheets reported in the
+  Tableau workbook):
+  - Top 10 Countries by Medals (ranking of total medals)
+  - Medal Breakdown by Country (gold / silver / bronze split)
+  - Medal Performance Over Time (trend across Olympic editions)
+  - Medal Efficiency by Country (formula Not verified [STUDENT TO CONFIRM])
+  - Medal Performance by Region (regional aggregation)
+  - Summer vs. Winter Medal Totals (comparison by Games type)
+  - Athlete Participation by Sport
+  - Athlete Gender Distribution
+  [Implemented - reported as workbook sheets; correctness of calculations
+  Not verified]
+
+FR 4 | Business Insights & Analytical Outputs | Priority: High
+  - Provide two Tableau dashboards (Dashboard 1 and Dashboard 2) and one
+    Tableau story. [Implemented - reported; two public dashboard links exist]
+  - Provide a Flask website with a home page and a /story page that presents
+    four narrative points: Top 10 Countries by Medal Achievements; Medal
+    Performance Over Time; Summer vs. Winter Olympics; Regional Medal
+    Performance. [Implemented - reported: app.py defines "/" and "/story"]
+  - Which of the eight sheets appear on which dashboard is Not verified.
+
+FR 5 | User Interaction & Analysis | Priority: Medium
+  - Let visitors explore the Tableau visuals in the browser (for example by
+    hovering for values). Tableau Public provides standard viewing
+    interactions.
+  - Let visitors move between the home page and the /story page.
+  - Specific filters, parameters, or dashboard actions: Not verified.
+    [STUDENT TO CONFIRM: list any filters/actions actually built]
+  - Drill-down features: Not verified.
+
+FR 6 | Data Update & Reporting | Priority: Low
+  - The dashboards are published on Tableau Public (view names contain
+    "Extract2" and "Extract3"), so they show data as it was when published.
+  - A process for refreshing the data automatically: Not verified and not
+    reported as implemented.
+  - Reporting output is the live website and the Tableau Public dashboards.
+    [Planned for the future: a documented manual refresh procedure]
+
+------------------------------------------------------------------------
+Non-functional Requirements:
+------------------------------------------------------------------------
+Following are the non-functional requirements of the proposed solution.
+
+NFR-1 | Usability
+  The website should be simple to navigate (home page and /story page) and the
+  dashboards should be readable on a laptop. The README lists a "responsive
+  Flask website layout"; testing on different screen sizes is Not verified.
+
+NFR-2 | Security
+  app.py only defines two read-only routes that render templates; it does not
+  accept user input or store personal data, and no login is implemented.
+  The dashboards are public on Tableau Public, so only data suitable for
+  public sharing should be used. Note: app.py ends with app.run(debug=True),
+  which is for local use. How the live site is started on Render is
+  Not verified (requirements.txt includes gunicorn). Debug mode should be off
+  in production. No security testing was done.
+
+NFR-3 | Reliability
+  The site depends on three external services: the Render host, Tableau
+  Public, and GitHub. If Tableau Public is unavailable, the embedded
+  dashboards will not display. Reliability was Not measured.
+
+NFR-4 | Performance
+  Page load time and dashboard load time were Not measured. Because the
+  dashboards are served by Tableau Public, much of the load time depends on
+  Tableau and the visitor's network.
+
+NFR-5 | Availability
+  The website is reported to be live at
+  https://olympic-performance-dashboard.onrender.com. Uptime, hosting plan,
+  and any sleep/cold-start behaviour of the hosting plan are Not verified and
+  Not measured.
+
+NFR-6 | Scalability
+  The Flask app is simple and does not keep data in memory between requests,
+  so it is not complicated to run more than one copy. No load testing was done,
+  so the number of concurrent visitors supported is Not measured. Adding more
+  data or more dashboards would require updating Tableau extracts.

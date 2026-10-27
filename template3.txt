@@ -1,0 +1,70 @@
+IDEATION PHASE
+DEFINE THE PROBLEM STATEMENTS
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 2 Marks
+
+------------------------------------------------------------------------
+Customer Problem Statement Template:
+------------------------------------------------------------------------
+Create a problem statement to understand your customer's point of view. The
+Customer Problem Statement template helps you focus on what matters to create
+experiences people will love.
+
+A well-articulated customer problem statement allows you and your team to find
+the ideal solution for the challenges your customers face. Throughout the
+process, you'll also be able to empathize with your customers, which helps you
+better understand how they perceive your product or service.
+
+Reference (from template): https://miro.com/templates/customer-problem-statement/
+
+Note on evidence: These problem statements are written from an assumed user
+point of view (see the Empathy Map). They are not based on interviews or
+surveys, which were not provided or verified.
+
+------------------------------------------------------------------------
+Problem Statements
+------------------------------------------------------------------------
+
+PS-1
+  I am (Customer)       : A student or sports enthusiast who wants to
+                          understand how countries perform at the Olympics.
+  I'm trying to         : Compare the medal achievements of countries and see
+                          which ones lead overall.
+  But                   : Raw medal data is hard to scan, rank, and compare
+                          without charts.
+  Because               : The data covers many countries, Olympic editions, and
+                          medal types, so patterns are not obvious in rows and
+                          columns.
+  Which makes me feel   : Overwhelmed and unsure that my conclusions are right.
+
+PS-2
+  I am (Customer)       : A casual viewer (for example a classmate or reviewer)
+                          who wants to follow the bigger picture of Olympic
+                          performance.
+  I'm trying to         : Understand trends over time, the difference between
+                          Summer and Winter Games, and how regions compare.
+  But                   : Separate charts do not tell me what to look at first
+                          or why each one matters.
+  Because               : There is no guided order or short explanation linking
+                          the charts together.
+  Which makes me feel   : Lost and less interested in exploring further.
+
+Same content in the template's table layout:
+
+Problem Statement | I am (Customer)     | I'm trying to              | But                         | Because                         | Which makes me feel
+------------------|---------------------|----------------------------|-----------------------------|---------------------------------|---------------------
+PS-1              | Student / sports    | Compare countries' medal   | Raw data is hard to scan    | Data spans many countries,      | Overwhelmed, unsure
+                  | enthusiast          | achievements               | and rank without charts     | editions, and medal types       |
+PS-2              | Casual viewer       | Follow trends, Summer vs.  | Separate charts give no     | No guided order or short        | Lost, less interested
+                  | (classmate/reviewer)| Winter, and regions        | sense of what to read first | explanation links the charts    |
+
+How the project responds:
+- PS-1 is addressed by the Tableau views Top 10 Countries by Medals, Medal
+  Breakdown by Country, and Medal Efficiency by Country.
+- PS-2 is addressed by the Flask /story page, which presents four narrative
+  points: (1) Top 10 Countries by Medal Achievements, (2) Medal Performance
+  Over Time, (3) Summer vs. Winter Olympics, (4) Regional Medal Performance.
+Whether these actually solve the problem for real users has Not been tested.

@@ -1,0 +1,97 @@
+PROJECT INITIALIZATION AND PLANNING PHASE
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Title   : Global Olympic Sports Performance Analysis
+Maximum Marks   : 3 Marks
+
+------------------------------------------------------------------------
+Project Proposal (Proposed Solution) template
+------------------------------------------------------------------------
+This project proposal outlines a solution to address a specific problem. With
+a clear objective, defined scope, and a concise problem statement, the proposed
+solution details the approach, key features, and resource requirements,
+including hardware, software, and personnel.
+
+Student: Anushka Sawner, Medicaps University (Individual Capstone Project).
+Mentor: No mentor assigned.
+
+PROJECT OVERVIEW
+----------------
+Objective:
+  To analyze Olympic sports performance and present the results through
+  interactive Tableau dashboards, embedded in a Flask website that also tells
+  the story in four narrative points.
+
+Scope:
+  In scope:
+  - Analysis views for medals by country (Top 10, breakdown, efficiency),
+    medals over time, Summer vs. Winter totals, regional medal performance,
+    athlete participation by sport, and athlete gender distribution (eight
+    sheets reported in the Tableau workbook).
+  - Two Tableau dashboards and one Tableau story published on Tableau Public.
+  - A Flask website with a home page "/" and a "/story" page, deployed on
+    Render and stored on GitHub.
+  Out of scope:
+  - Predictive models or forecasting.
+  - A database or data warehouse (Snowflake is not used).
+  - User accounts, login, or user data storage.
+  - Automated data refresh (Not verified; not reported as implemented).
+
+PROBLEM STATEMENT
+-----------------
+Description:
+  Olympic performance data covers many countries, editions, sports, and medal
+  types. In raw tables it is difficult for students and enthusiasts to compare
+  countries, follow trends, or understand differences between Summer and
+  Winter Games and between regions, and there is often no guided order to
+  follow.
+
+Impact:
+  Solving this gives users a quick, visual, and ordered way to understand
+  medal achievements and athlete participation. It also gives the student a
+  complete example of a BI workflow: data in Tableau, dashboards published
+  online, and a custom website around them. The real-world impact on users has
+  Not been measured.
+
+PROPOSED SOLUTION
+-----------------
+Approach:
+  1. Collect and load the Olympic datasets (Google Drive dataset folder) into
+     Tableau. The source and provenance of the data are Not verified, so it
+     is not described as official Olympic data. [STUDENT TO CONFIRM: source]
+  2. Prepare the data and check for duplicates and inconsistent names before
+     counting medals or athletes (cleaning steps Not verified).
+  3. Build analysis sheets, then combine them into two dashboards and one
+     story in Tableau.
+  4. Publish the dashboards to Tableau Public.
+  5. Build a Flask app (Python, HTML, CSS) with a home page and a /story page
+     that embed the dashboards.
+  6. Store the code on GitHub and deploy it on Render.
+
+Key Features:
+  - Interactive Tableau dashboards (README).
+  - Top 10 countries by medal achievements and medal breakdown by country.
+  - Medal efficiency comparison (definition Not verified).
+  - Medal performance over time.
+  - Summer vs. Winter Olympic comparison.
+  - Regional medal performance.
+  - Athlete participation by sport and gender distribution.
+  - /story page with four narrative points.
+  - Responsive Flask layout (as stated in the README; device testing
+    Not verified).
+
+RESOURCE REQUIREMENTS
+---------------------
+Resource Type          | Description                              | Specification / Allocation
+-----------------------|------------------------------------------|---------------------------------------------
+HARDWARE               |                                          |
+Computing Resources    | CPU/GPU specifications, number of cores  | [STUDENT TO CONFIRM: student's laptop CPU/cores]. No GPU needed. Live host: Render (plan Not verified).
+Memory                 | RAM specifications                       | [STUDENT TO CONFIRM: laptop RAM]. Not measured.
+Storage                | Disk space for data, models, and logs    | [STUDENT TO CONFIRM]. Code is very small (requirements.txt is 16 bytes; app.py is 263 bytes). Dataset size Not verified.
+SOFTWARE               |                                          |
+Frameworks             | Python frameworks                        | Flask; gunicorn (listed in requirements.txt)
+Libraries              | Additional libraries                     | No other Python libraries are listed in requirements.txt. Data analysis is done in Tableau.
+Development Environment| IDE, version control                     | Git and GitHub; Tableau (desktop authoring tool, edition [STUDENT TO CONFIRM]); code editor/IDE [STUDENT TO CONFIRM]. Deployment: Render. Dashboards: Tableau Public.
+DATA                   |                                          |
+Data                   | Source, size, format                     | Dataset folder: https://drive.google.com/drive/folders/1FUnbqjwH1Apyb2NjwW-D-NIEONIEL1ig?usp=sharing. Original source, size, and format: Not verified. [STUDENT TO CONFIRM]

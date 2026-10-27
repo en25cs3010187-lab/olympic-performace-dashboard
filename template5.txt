@@ -1,0 +1,123 @@
+PROJECT DESIGN PHASE-II
+DATA FLOW DIAGRAM & USER STORIES
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 4 Marks
+
+------------------------------------------------------------------------
+Data Flow Diagrams:
+------------------------------------------------------------------------
+A Data Flow Diagram (DFD) is a traditional visual representation of the
+information flows within a system. It shows how data enters and leaves the
+system, what changes the information, and where data is stored.
+
+DFD Symbol Legend (as used in the text diagrams below)
+Symbol                    | Name            | Description
+--------------------------|-----------------|--------------------------------------------
+( Oval text )             | External Entity | A person or system outside the project that sends or receives data
+[ n.0 Process name ]      | Process         | An activity that transforms incoming data into outgoing data
+|| D1 Data store ||       | Data Store      | A place where data is held for later use
+--label-->                | Data Flow       | Movement of data, labeled with what is passed
+
+Note: The diagrams describe the system as documented in the GitHub README,
+app.py, and the project links. The origin of the datasets and the exact
+preparation steps are Not verified.
+
+LEVEL 0 (Context Diagram)
+
+ ( Olympic dataset files )                                   ( Website Visitor )
+        |                                                       ^        |
+        | raw Olympic data                      dashboards,    |        | page requests
+        |                                       story, pages   |        | (/ and /story)
+        v                                                       |        v
+   +--------------------------------------------------------------------------+
+   |        0.0  GLOBAL OLYMPIC SPORTS PERFORMANCE ANALYSIS SYSTEM            |
+   |        (Tableau dashboards + Flask website)                              |
+   +--------------------------------------------------------------------------+
+        ^                                       |
+        | code, templates, README               | published dashboards
+        |                                       v
+ ( Developer: Anushka Sawner )              ( Tableau Public / Render hosting )
+
+LEVEL 1
+
+ ( Olympic dataset files )
+        |
+        | raw Olympic data
+        v
+ [ 1.0 Load and prepare data in Tableau ] <--- cleaning steps Not verified
+        |                  |
+        | prepared data    | stores
+        v                  v
+ [ 2.0 Build sheets,   || D1 Tableau workbook / extracts ||
+   dashboards, story ] ---stores workbook-->
+        |
+        | published workbook
+        v
+ [ 3.0 Publish to Tableau Public ] --stores--> || D2 Tableau Public views ||
+        |                                         (Dashboard1, Dashboard2)
+        |
+        |   dashboard URLs
+        v
+ [ 4.0 Embed dashboards in Flask templates ] <--- code/templates --- ( Developer )
+        |                                          stored in
+        |                                      || D3 GitHub repository ||
+        |  deployed app
+        v
+ [ 5.0 Serve website pages on Render ] <--- page request ( / or /story ) --- ( Website Visitor )
+        |                                         ^
+        |  HTML page + embedded dashboard         |
+        +-----------------------------------------> ( Website Visitor )
+                                                 (browser loads dashboard
+                                                  directly from Tableau Public)
+
+Data stores:
+  D1  Tableau workbook / extracts  (two dashboards, one story, eight sheets reported)
+  D2  Tableau Public published views
+        https://public.tableau.com/views/Olympic_Sport_Performance_Extract2/Dashboard1
+        https://public.tableau.com/views/Olympic_Sport_Performance_Extract3/Dashboard2
+  D3  GitHub repository: https://github.com/aeraa1725-bot/olympic-performance-dashboard
+      (app.py, requirements.txt, README.md, templates/, static/)
+No relational database or data warehouse is used. Snowflake is Not applicable.
+
+------------------------------------------------------------------------
+User Stories
+------------------------------------------------------------------------
+Use the below template to list all the user stories for the product.
+
+Notes:
+- This product has no registration or login, so Registration and Login epics
+  are Not applicable.
+- "Customer Care Executive" is Not applicable (no support function).
+- The "Release" column is a retrospective planning grouping into four sprints.
+  Actual sprint history and dates are Not verified.
+  [STUDENT TO CONFIRM: sprint grouping]
+- Acceptance criteria describe the expected result. They have Not been formally
+  verified through recorded testing.
+
+User Type                | Epic                          | USN    | User Story / Task                                                                     | Acceptance criteria                                                          | Priority | Release
+-------------------------|-------------------------------|--------|---------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----------|---------
+Administrator/Developer  | Data Access & Processing      | USN-1  | As a developer, I can load the Olympic dataset files into Tableau.                    | Data appears in Tableau and sheets can be built from it.                     | High     | Sprint-1
+Administrator/Developer  | Data Access & Processing      | USN-2  | As a developer, I can prepare the data and check for duplicates and inconsistent names.| Medal totals and athlete counts are checked; steps documented [STUDENT TO CONFIRM]. | High     | Sprint-1
+Administrator/Developer  | Business Analysis             | USN-3  | As a developer, I can define the metrics (medal totals, medal efficiency, participation).| Each metric has a written definition [STUDENT TO CONFIRM].               | High     | Sprint-1
+Website Visitor (Web)    | Medal Analysis Views          | USN-4  | As a visitor, I can see the Top 10 countries by medals.                               | A ranked view of 10 countries is shown.                                      | High     | Sprint-2
+                         |                               | USN-5  | As a visitor, I can see the gold/silver/bronze breakdown for each country.            | Medal types are shown separately per country.                                | High     | Sprint-2
+                         |                               | USN-6  | As a visitor, I can see how medal performance changed over time.                      | A time-based view across Olympic editions is shown.                          | High     | Sprint-2
+                         |                               | USN-7  | As a visitor, I can compare medal efficiency between countries.                       | A medal efficiency view is shown (definition Not verified).                  | Medium   | Sprint-2
+                         |                               | USN-8  | As a visitor, I can compare medal performance by region.                              | A regional comparison view is shown.                                         | High     | Sprint-2
+                         |                               | USN-9  | As a visitor, I can compare Summer and Winter Olympics medal totals.                  | Summer and Winter totals are shown side by side.                             | High     | Sprint-2
+                         | Athlete Participation Views   | USN-10 | As a visitor, I can see athlete participation by sport.                               | Participation per sport is shown.                                            | Medium   | Sprint-2
+                         |                               | USN-11 | As a visitor, I can see the athlete gender distribution.                              | Gender distribution is shown.                                                | Medium   | Sprint-2
+                         | Dashboards & Story            | USN-12 | As a visitor, I can view two combined Tableau dashboards.                             | Dashboard 1 and Dashboard 2 open from their public links.                    | High     | Sprint-3
+                         |                               | USN-13 | As a visitor, I can read a Tableau story that links the charts.                       | One story is available in the workbook (reported).                           | Medium   | Sprint-3
+                         | Website - Home                | USN-14 | As a visitor, I can open the home page and see the embedded dashboards.               | "/" loads and shows the dashboards.                                          | High     | Sprint-3
+                         | Website - Story               | USN-15 | As a visitor, I can open /story and read four narrative points in order.              | "/story" shows the four points listed in the project overview.               | High     | Sprint-3
+                         | Interaction                   | USN-16 | As a visitor, I can hover over visuals to read the values.                            | Standard Tableau Public tooltips work (filters/actions Not verified).        | Medium   | Sprint-3
+Website Visitor (Mobile) | Responsive Layout             | USN-17 | As a mobile visitor, I can read the site on my phone.                                 | Layout adjusts to a small screen (testing Not verified).                     | Medium   | Sprint-3
+Administrator/Developer  | Deployment                    | USN-18 | As a developer, I can deploy the Flask app so it is available online.                 | Site opens at https://olympic-performance-dashboard.onrender.com.            | High     | Sprint-4
+                         | Source Control & Docs         | USN-19 | As a developer, I can store the code in GitHub with a README and run steps.           | README explains how to clone, install, and run locally.                      | Medium   | Sprint-4
+                         | Testing                       | USN-20 | As a developer, I can test the pages and dashboards and record results.               | Test results recorded. Status: Not verified.                                 | High     | Sprint-4
+                         | Data Update                   | USN-21 | As a developer, I can refresh the data with a documented process.                     | Refresh steps written. Status: Not verified.                                 | Low      | Backlog (not scheduled)
+Customer Care Executive  | -                             | -      | Not applicable - this project has no customer support function.                       | -                                                                            | -        | -

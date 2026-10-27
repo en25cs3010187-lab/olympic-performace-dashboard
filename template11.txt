@@ -1,0 +1,123 @@
+PROJECT PLANNING PHASE
+PROJECT PLANNING TEMPLATE (PRODUCT BACKLOG, SPRINT PLANNING, STORIES, STORY POINTS)
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 8 Marks
+
+Important note on evidence:
+No sprint board, sprint dates, time logs, or effort records were provided, and
+the GitHub commit history could not be read automatically. The sprint grouping
+and story points below are therefore a RETROSPECTIVE PLANNING ESTIMATE built
+from the project's features, not a record of measured work.
+  [STUDENT TO CONFIRM: sprint grouping and story points]
+Dates, completed story points, and release dates are NOT filled in because
+they cannot be verified. Team member for every story is Anushka Mali, because
+this is an individual project with no team.
+
+------------------------------------------------------------------------
+Product Backlog, Sprint Schedule, and Estimation (4 Marks)
+------------------------------------------------------------------------
+Use the below template to create product backlog and sprint schedule.
+
+Sprint    | Functional Requirement (Epic)  | USN    | User Story / Task                                                                      | Story  | Priority | Team Members
+          |                                |        |                                                                                        | Points |          |
+----------|--------------------------------|--------|----------------------------------------------------------------------------------------|--------|----------|-------------
+Sprint-1  | Data Access & Processing       | USN-1  | As a developer, I can load the Olympic dataset files into Tableau.                     | 2      | High     | Anushka Sawner
+Sprint-1  |                                | USN-2  | As a developer, I can prepare the data and check duplicates and inconsistent names.    | 3      | High     | Anushka Sawner
+Sprint-1  | Business Analysis              | USN-3  | As a developer, I can define the metrics (medal totals, medal efficiency, participation).| 2    | High     | Anushka Sawner
+Sprint-2  | Medal Analysis Views           | USN-4  | As a visitor, I can see the Top 10 countries by medals.                                | 2      | High     | Anushka sawner
+Sprint-2  |                                | USN-5  | As a visitor, I can see the gold/silver/bronze breakdown for each country.             | 2      | High     | Anushka Sawner
+Sprint-2  |                                | USN-6  | As a visitor, I can see how medal performance changed over time.                       | 2      | High     | Anushka Sawner 
+Sprint-2  |                                | USN-7  | As a visitor, I can compare medal efficiency between countries.                        | 3      | Medium   | Anushka Sawner
+Sprint-2  |                                | USN-8  | As a visitor, I can compare medal performance by region.                               | 2      | High     | Anushka Sawner
+Sprint-2  |                                | USN-9  | As a visitor, I can compare Summer and Winter Olympics medal totals.                   | 2      | High     | Anushka Sawner
+Sprint-2  | Athlete Participation Views    | USN-10 | As a visitor, I can see athlete participation by sport.                                | 2      | Medium   | Anushka Sawner
+Sprint-2  |                                | USN-11 | As a visitor, I can see the athlete gender distribution.                               | 1      | Medium   | Anushka Sawner
+Sprint-3  | Dashboards & Story             | USN-12 | As a visitor, I can view two combined Tableau dashboards.                              | 3      | High     | Anushka Sawner
+Sprint-3  |                                | USN-13 | As a visitor, I can read a Tableau story that links the charts.                        | 2      | Medium   | Anushka Sawner
+Sprint-3  | Website - Home                 | USN-14 | As a visitor, I can open the home page and see the embedded dashboards.                | 3      | High     | Anushka Sawner
+Sprint-3  | Website - Story                | USN-15 | As a visitor, I can open /story and read four narrative points in order.               | 3      | High     | Anushka Sawner
+Sprint-3  | Interaction                    | USN-16 | As a visitor, I can hover over visuals to read the values.                             | 2      | Medium   | Anushka Sawner
+Sprint-3  | Responsive Layout              | USN-17 | As a mobile visitor, I can read the site on my phone.                                  | 2      | Medium   | Anushka Sawner
+Sprint-4  | Deployment                     | USN-18 | As a developer, I can deploy the Flask app so it is available online.                  | 3      | High     | Anushka Sawner
+Sprint-4  | Source Control & Docs          | USN-19 | As a developer, I can store the code in GitHub with a README and run steps.            | 2      | Medium   | Anushka Sawner
+Sprint-4  | Testing                        | USN-20 | As a developer, I can test the pages and dashboards and record results.                | 3      | High     | Anushka Sawner
+Backlog   | Data Update                    | USN-21 | As a developer, I can refresh the data with a documented process.                      | 2      | Low      | Anushka Sawner
+          |                                |        | (not scheduled in any sprint)                                                          |        |          |
+
+Status of backlog items (evidence-based):
+- Reported as done (from README, app.py, workbook list, project links; not
+  independently tested): USN-4 to USN-19, in the sense that the features,
+  dashboards, routes, deployment link, and repository exist or are described.
+  The README also states a responsive layout (USN-17).
+- USN-1, USN-2, USN-3: data loading is implied by the existence of the sheets;
+  cleaning steps and metric definitions are Not verified.
+- USN-20 (testing): No test results were provided. Status: Not verified.
+- USN-21 (data refresh): Not verified; not scheduled.
+
+------------------------------------------------------------------------
+Project Tracker, Velocity & Burndown Chart: (4 Marks)
+------------------------------------------------------------------------
+Total story points per sprint are the sums from the backlog above (a
+calculation from the estimate). All date and completion fields are left for
+the student because no record was provided.
+
+Sprint   | Total Story | Duration | Sprint Start | Sprint End   | Story Points Completed  | Sprint Release
+         | Points      |          | Date         | Date (Plan)  | (as on Planned End Date)| Date (Actual)
+---------|-------------|----------|--------------|--------------|-------------------------|---------------
+Sprint-1 | 7           | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM] | Not verified | Not verified
+Sprint-2 | 16          | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM] | Not verified | Not verified
+Sprint-3 | 15          | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM] | Not verified | Not verified
+Sprint-4 | 8           | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM] | Not verified | Not verified
+Backlog  | 2           | Not scheduled | Not applicable | Not applicable | Not applicable | Not applicable
+TOTAL    | 46 in sprints (48 including the unscheduled backlog item)
+
+Velocity:
+Imagine we have a 10-day sprint duration, and the velocity of the team is 20
+(points per sprint). Let's calculate the team's average velocity (AV) per
+iteration unit (story points per day):
+
+    AV = Sprint velocity / Sprint duration (in days)
+    Template example: AV = 20 / 10 = 2 story points per day
+
+For this project:
+- Sprint velocity (story points completed per sprint): Not measured.
+- Sprint duration: [STUDENT TO CONFIRM].
+- Average velocity: Not measured. It can be calculated once the completed
+  points and the sprint length are confirmed, using the formula above.
+- Planned (estimated) points per sprint are 7, 16, 15, and 8. These are
+  estimates, not measured velocity.
+
+Burndown Chart:
+A burn down chart is a graphical representation of work left to do versus
+time. It is often used in agile software development methodologies such as
+Scrum. However, burn down charts can be applied to any project containing
+measurable progress over time.
+
+No burndown chart is available because daily or sprint-wise progress was not
+recorded in the evidence provided. Burndown: Not measured.
+Blank tracking table the student can fill from real records:
+
+Sprint   | Day / Date | Story points remaining
+---------|------------|------------------------
+Sprint-1 | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM]
+Sprint-2 | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM]
+Sprint-3 | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM]
+Sprint-4 | [STUDENT TO CONFIRM] | [STUDENT TO CONFIRM]
+
+Project links (verified as provided by the student):
+GitHub Repository : https://github.com/aeraa1725-bot/olympic-performance-dashboard
+Live Flask Website: https://olympic-performance-dashboard.onrender.com
+Tableau Dashboard 1: https://public.tableau.com/views/Olympic_Sport_Performance_Extract2/Dashboard1
+Tableau Dashboard 2: https://public.tableau.com/views/Olympic_Sport_Performance_Extract3/Dashboard2
+
+Reference (listed in the provided template; not independently reviewed here):
+https://www.atlassian.com/agile/project-management
+https://www.atlassian.com/agile/tutorials/how-to-do-scrum-with-jira-software
+https://www.atlassian.com/agile/tutorials/epics
+https://www.atlassian.com/agile/tutorials/sprints
+https://www.atlassian.com/agile/project-management/estimation
+https://www.atlassian.com/agile/tutorials/burndown-charts
+https://www.visual-paradigm.com/scrum/scrum-burndown-chart/

@@ -1,0 +1,111 @@
+PROJECT DESIGN PHASE-I
+PROBLEM - SOLUTION FIT TEMPLATE
+
+Date            : 26 October 2026
+Team ID         : Not applicable - individual project; no team ID
+Project Name    : Global Olympic Sports Performance Analysis
+Maximum Marks   : 2 Marks
+
+------------------------------------------------------------------------
+Problem - Solution Fit Template:
+------------------------------------------------------------------------
+The Problem-Solution Fit simply means that you have found a problem with your
+customer and that the solution you have realized for it actually solves the
+customer's problem. It helps entrepreneurs, marketers and corporate innovators
+identify behavioral patterns and recognize what would work and why.
+
+Purpose:
+- Solve complex problems in a way that fits the state of your customers.
+- Succeed faster and increase your solution adoption by tapping into existing
+  mediums and channels of behavior.
+- Sharpen your communication and marketing strategy with the right triggers
+  and messaging.
+- Increase touch-points with your company by finding the right problem-behavior
+  fit and building trust by solving frequent annoyances, or urgent or costly
+  problems.
+- Understand the existing situation in order to improve it for your target group.
+
+Note on evidence: The canvas below is based on assumptions about users. No user
+research, interviews, or surveys were provided or verified, so the "fit" is a
+design hypothesis and has Not been tested with real users.
+
+Template (Problem-Solution Fit Canvas - 10 sections):
+
+1. CUSTOMER SEGMENT(S)  [CS]
+   Who is your customer?
+   - Students and sports enthusiasts who want to understand Olympic medal
+     performance.
+   - Casual viewers (classmates, reviewers) who want an easy overview.
+   - Beginner data analysts who want an example of Tableau dashboards inside a
+     Flask website.
+   (Assumed segments, not confirmed by research.)
+
+2. JOBS-TO-BE-DONE / PROBLEMS  [J&P]
+   - Find out which countries win the most medals.
+   - See how medal performance changed over time.
+   - Compare Summer and Winter Olympics, and compare regions.
+   - Understand athlete participation by sport and gender distribution.
+   - Follow the results in a clear order instead of many unrelated charts.
+
+3. TRIGGERS  [TR]
+   - A coursework or curiosity question such as "Which countries are strongest
+     at the Olympics?"
+   - Olympic news or discussions that make people want quick comparisons.
+   - Receiving a link to the website.
+
+4. EMOTIONS: BEFORE / AFTER  [EM]
+   Before: overwhelmed by raw tables, unsure which numbers to trust, lost.
+   After (intended): informed, curious to explore more, confident about the
+   main patterns. Actual user emotions were Not measured.
+
+5. AVAILABLE SOLUTIONS  [AS]
+   - Searching for medal tables on websites and reading tables.
+   - Building own charts in a spreadsheet.
+   - Existing public dashboards or articles (specific ones were not reviewed
+     for this document, so none are named).
+   Pros: free and quick. Cons: tables are hard to compare; spreadsheets need
+   time and skill; separate sources may not follow a guided story.
+
+6. CUSTOMER CONSTRAINTS  [CC]
+   - Limited time and limited data skills.
+   - Needs a free tool that works in a normal browser on a laptop or phone.
+   - Cannot easily check data quality or origin.
+
+7. BEHAVIOUR  [BE]
+   - Searches online for medal statistics.
+   - Compares a few countries manually.
+   - Prefers charts they can hover over and click.
+   (Assumed behaviour, not researched.)
+
+8. CHANNELS of BEHAVIOUR  [CH]
+   8.1 ONLINE: web search, sharing links by messages, opening a Flask website
+       with embedded Tableau Public dashboards in a browser.
+   8.2 OFFLINE: classroom discussion and project presentations/reports where
+       the live site link or screenshots are shown.
+
+9. PROBLEM ROOT CAUSE  [RC]
+   Olympic data covers many countries, editions, sports, and medal types, and
+   it is usually presented as tables. Without visual summaries and a guided
+   order, it is hard to see patterns. Combining sources with different levels
+   of detail can also make counts unreliable (a data-quality risk that still
+   needs to be checked).
+
+10. YOUR SOLUTION  [SL]
+    Global Olympic Sports Performance Analysis: interactive Tableau dashboards
+    embedded in a Flask website with a home page and a /story page presenting
+    four narrative points (Top 10 Countries by Medal Achievements; Medal
+    Performance Over Time; Summer vs. Winter Olympics; Regional Medal
+    Performance).
+    - Live site: https://olympic-performance-dashboard.onrender.com
+    - Dashboard 1: https://public.tableau.com/views/Olympic_Sport_Performance_Extract2/Dashboard1
+    - Dashboard 2: https://public.tableau.com/views/Olympic_Sport_Performance_Extract3/Dashboard2
+    - Code: https://github.com/aeraa1725-bot/olympic-performance-dashboard
+    How well it fits user behaviour and constraints: Not verified with users.
+    It matches the constraints in section 6 in design only (free to open,
+    browser-based, guided story page).
+
+References (listed in the provided template):
+1. https://www.ideahackers.network/problem-solution-fit-canvas/
+2. https://medium.com/@epicantus/problem-solution-fit-canvas-aa3dd59cb4fe
+(These are the template's own references; they were not independently
+reviewed for this document.)
